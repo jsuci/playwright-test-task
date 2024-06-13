@@ -73,5 +73,5 @@ const { chromium } = require("playwright");
   // i add this since clicking the logout button does not logout the user in the actual site.
   await context.clearCookies();
 
-  await context.close();
+  await browser.close();
 })();
